@@ -1,4 +1,6 @@
 import random
+import time
+
 
 min_num = int(input("enter the mini number : "))
 max_num = int(input("enter the max number : "))
