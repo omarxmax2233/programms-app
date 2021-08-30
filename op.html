@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>x-o</title>
+    
+</head>
+<body>
+
+    <style>
+
+       .cont{
+
+        width: 400px;
+        height: 400px;
+        margin:  auto;
+       
+       }
+       
+       .square{
+
+        width: 120px;
+        height: 120px;
+        background-color: #0F988B;
+        margin: 5px;
+        font-size: 100px;
+        color: white;
+        float: left;
+        text-align: center;
+        font-style: bold;
+        cursor:pointer;
+       }
+
+
+    </style>
+
+    <div class="cont">
+
+        <div class="square" id="a1" onclick="insert(this.id)"></div>
+     
+        <div class="square" id="a2" onclick="insert(this.id)"></div>
+        <div class="square" id="a3" onclick="insert(this.id)"></div>
+        <div class="square" id="a4" onclick="insert(this.id)"></div>
+        <div class="square" id="a5" onclick="insert(this.id)"></div>
+        <div class="square" id="a6" onclick="insert(this.id)"></div>
+        <div class="square" id="a7" onclick="insert(this.id)"></div>
+        <div class="square" id="a8" onclick="insert(this.id)"></div>
+        <div class="square" id="a9" onclick="insert(this.id)"></div>
+        
+
+
+
+
+
+    </div>
+
+
+    <script>
+
+        var turn = true ;//turn x
+
+        
+        
+
+    function insert(id){
+
+        var s =  document.getElementById(id)
+
+        if(turn && s.innerHTML==""){
+
+           s.innerHTML = "X";
+            turn = !turn;
+        }
+        else if(!turn && s.innerHTML=="") {
+           
+            s.innerHTML = "O"; 
+            turn = !turn;
+        }
+      
+        
+    }
+
+    </script>
+    
+</body>
+</html>
